@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const mongodb_url = "mongodburl"
 
 exports.connect = () => {
   return mongoose.connect(
-    'mongodb://127.0.0.1:27017/ElectricMotorAutomationApp',
+     mongodb_url,
     { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }
   );
 };
